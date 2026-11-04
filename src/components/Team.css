@@ -1,0 +1,1054 @@
+/* =====================================
+   GLOBAL TEAM PAGE
+===================================== */
+
+.team-page {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  color: black;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.team-page * {
+  box-sizing: border-box;
+}
+
+
+/* =====================================
+   SECTION 1 - HERO SECTION
+===================================== */
+
+.team-hero-section {
+  width: 100%;
+  min-height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+
+  padding: 80px 6% 100px;
+
+  background: white;
+}
+
+
+/* =====================================
+   HERO CONTENT
+===================================== */
+
+.team-hero-container {
+  width: 100%;
+  max-width: 1100px;
+}
+
+
+/* =====================================
+   HERO BADGE
+===================================== */
+
+.team-hero-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 12px 19px;
+
+  border: 2px solid rgba(228, 42, 110, 0.991);
+  border-radius: 40px;
+
+  background: rgb(250, 203, 225);
+
+  color: #f41b79;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 35px;
+}
+
+
+/* =====================================
+   HERO MAIN HEADING
+===================================== */
+
+.team-hero-title {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 75px;
+
+  font-weight: 850;
+
+  line-height: 1.2;
+
+  letter-spacing: -2px;
+
+  margin: 0 0 40px;
+}
+
+
+/* WHITE HEADING TEXT */
+
+.team-hero-white {
+  color: black;
+  display: block;
+}
+
+
+/* GRADIENT HEADING TEXT */
+
+.team-hero-gradient {
+  display: block;
+
+  background: black;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+
+/* =====================================
+   HERO DESCRIPTION
+===================================== */
+
+.team-hero-description {
+  max-width: 850px;
+
+  color: #3f3c42;
+
+  font-size: 20px;
+
+  font-weight: 300;
+
+  line-height: 1.9;
+
+  letter-spacing: -0.3px;
+}
+
+
+/* =========================================
+   SECTION 2 - OUR TEAM
+========================================= */
+
+.team-members-section {
+  width: 100%;
+
+  padding: 110px 8.5% 120px;
+
+  background:
+    radial-gradient(
+      ellipse at 85% 10%,
+      rgba(65, 36, 75, 0.13),
+      transparent 40%
+    ),
+    #0d0e13;
+
+  color: white;
+}
+
+
+/* =========================================
+   TEAM SECTION HEADER
+========================================= */
+
+.team-members-header {
+  margin-bottom: 65px;
+}
+
+
+/* =========================================
+   TEAM EYEBROW
+========================================= */
+
+.team-members-eyebrow {
+  display: inline-block;
+
+  padding: 9px 17px;
+
+  border: 1px solid rgba(228, 42, 110, 0.991);
+  border-radius: 50px;
+
+  color: rgba(228, 42, 110, 0.991);
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================
+   TEAM SECTION HEADING
+========================================= */
+
+.team-members-title {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+
+  font-size: clamp(48px, 6vw, 82px);
+
+  font-weight: 900;
+
+  line-height: 1.03;
+
+  letter-spacing: -4px;
+
+  color: #ffffff;
+}
+
+
+
+
+/* =========================================
+   TEAM MEMBERS GRID
+========================================= */
+
+.team-members-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 25px;
+
+  width: 100%;
+}
+
+
+/* =========================================
+   TEAM MEMBER CARD
+========================================= */
+
+.team-members-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 480px;
+
+  padding: 32px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 25px;
+
+  background: linear-gradient(
+    145deg,
+    #17171e,
+    #101116
+  );
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+
+/* CARD HOVER */
+
+.team-members-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(231, 139, 181, 0.5);
+
+  background: linear-gradient(
+    145deg,
+    #201a24,
+    #111116
+  );
+}
+
+
+/* =========================================
+   CARD NUMBER
+========================================= */
+
+.team-members-number {
+  color: #1484bc;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================
+   MEMBER AVATAR
+========================================= */
+
+.team-members-avatar {
+  width: 90px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 38px;
+  margin-bottom: 25px;
+
+  border-radius: 30px;
+box-shadow: 0 8px 35px rgba(213, 146, 195, 0.84);
+  background: linear-gradient(
+    135deg,
+    #66c8ed,
+    #d28bbf,
+    #ed8eaf
+  );
+
+  box-shadow: 0 8px 35px rgba(210, 139, 191, 0.15);
+}
+
+
+.team-members-avatar span {
+  color: #111116;
+
+  font-size: 27px;
+
+  font-weight: 900;
+
+  letter-spacing: -1px;
+}
+
+
+/* =========================================
+   MEMBER INFORMATION
+========================================= */
+
+.team-members-info h3 {
+  margin: 0 0 10px;
+
+  color: #ffffff;
+
+  font-size: 28px;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+
+/* MEMBER ROLE */
+
+.team-members-role {
+  margin: 0 0 18px;
+
+  color: rgba(228, 42, 110, 0.991);
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+.team-members-category{
+  margin: 0 0 18px;
+
+  color: #858384;
+
+  font-size: 13px;
+
+  font-weight: 650;
+}
+
+/* MEMBER DESCRIPTION */
+
+.team-members-description {
+  max-width: 450px;
+
+  margin: 0;
+
+  color: #aaa7b1;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+
+/* =========================================
+   CARD FOOTER
+========================================= */
+
+.team-members-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: auto;
+
+  padding-top: 40px;
+  color: #85818d;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.team-footer-span{
+  border: 1px solid rgba(106, 105, 105, 0.92);
+  padding: 6px 12px;
+  border-radius: 50px;
+}
+/* FOOTER ARROW */
+
+.team-members-arrow {
+  color: rgba(228, 42, 110, 0.991);
+
+  font-size: 23px;
+
+  transition: transform 0.3s ease;
+}
+
+
+.team-members-card:hover .team-members-arrow {
+  transform: translate(4px, -4px);
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+
+  .team-hero-section {
+    padding: 45px 6% 80px;
+  }
+
+  .team-hero-title {
+    font-size: 10vw;
+    letter-spacing: -4px;
+  }
+
+  .team-hero-description {
+    font-size: 17px;
+  }
+
+  .team-members-section {
+    padding: 90px 6%;
+  }
+
+  .team-members-card {
+    padding: 25px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  /* HERO SECTION */
+
+  .team-hero-section {
+    min-height: 85vh;
+    padding: 55px 6% 80px;
+  }
+
+  .team-hero-badge {
+    font-size: 10px;
+    padding: 10px 14px;
+    margin-bottom: 32px;
+  }
+
+  .team-hero-title {
+    font-size: 12vw;
+    letter-spacing: -3px;
+    line-height: 0.98;
+    margin-bottom: 30px;
+  }
+
+  .team-hero-description {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+
+  /* TEAM MEMBERS SECTION */
+
+  .team-members-section {
+    padding: 75px 6% 85px;
+  }
+
+  .team-members-header {
+    margin-bottom: 45px;
+  }
+
+  .team-members-title {
+    font-size: 9vw;
+    letter-spacing: -2px;
+  }
+
+  .team-members-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .team-members-card {
+    min-height: 450px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  /* HERO */
+
+  .team-hero-section {
+    min-height: 80vh;
+    padding: 65px 22px;
+  }
+
+  .team-hero-badge {
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+
+  .team-hero-title {
+    font-size: 12vw;
+    letter-spacing: -2px;
+    line-height: 1.02;
+  }
+
+  .team-hero-description {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+
+  /* TEAM MEMBERS */
+
+  .team-members-section {
+    padding: 65px 22px 75px;
+  }
+
+  .team-members-title {
+    font-size: 10vw;
+    letter-spacing: -2px;
+  }
+
+  .team-members-card {
+    padding: 23px;
+    min-height: 460px;
+  }
+
+  .team-members-info h3 {
+    font-size: 24px;
+  }
+
+  .team-members-description {
+    font-size: 13px;
+  }
+
+  .team-members-avatar {
+    width: 78px;
+    height: 78px;
+  }
+
+}
+
+/* =====================================
+   SECTION 3 - OPERATING PRINCIPLES
+===================================== */
+
+.operating-principles-section {
+  width: 100%;
+  padding: 90px 32px 100px;
+  background: #f3f3f1;
+  color: #111;
+}
+
+/* SECTION HEADING */
+
+.operating-principles-heading {
+  margin-bottom: 48px;
+}
+
+.operating-principles-eyebrow {
+  display: block;
+  color: #98434c;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.operating-principles-heading h2 {
+  font-size: clamp(42px, 5.2vw, 58px);
+  line-height: 0.98;
+  font-weight: 750;
+  letter-spacing: -2.5px;
+}
+
+.operating-principles-heading h2 span {
+  color: #555;
+}
+
+/* PRINCIPLES GRID */
+
+.operating-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+/* PRINCIPLE CARD */
+
+.operating-principles-card {
+  min-height: 255px;
+  background: #eaeae8;
+  border-radius: 24px 24px 0 0;
+  padding: 25px 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.operating-principles-card:hover {
+  background: #fff;
+  transform: translateY(-4px);
+}
+
+/* CARD NUMBER */
+
+.operating-principles-number {
+  font-size: 10px;
+  font-weight: 700;
+  color: #98434c;
+  letter-spacing: 0.5px;
+}
+
+/* CARD CONTENT */
+
+.operating-principles-content h3 {
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+  max-width: 230px;
+}
+
+.operating-principles-content p {
+  font-size: 12px;
+  line-height: 1.65;
+  color: #666;
+  max-width: 240px;
+}
+
+/* TABLET RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .operating-principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .operating-principles-card {
+    min-height: 230px;
+  }
+
+  .operating-principles-section {
+    padding: 70px 24px;
+  }
+
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 550px) {
+
+  .operating-principles-section {
+    padding: 55px 18px 65px;
+  }
+
+  .operating-principles-heading {
+    margin-bottom: 35px;
+  }
+
+  .operating-principles-heading h2 {
+    font-size: 43px;
+    letter-spacing: -2px;
+  }
+
+  .operating-principles-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .operating-principles-card {
+    min-height: 210px;
+    padding: 22px;
+  }
+
+  .operating-principles-content h3 {
+    font-size: 20px;
+  }
+
+}
+/* =====================================
+   SECTION 4 - FOUNDER STATEMENT
+===================================== */
+
+.founder-statement-section {
+    width: 100%;
+    min-height: 435px;
+
+    background: #08070d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 85px 25px;
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.founder-statement-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* QUOTATION ICON */
+
+.founder-statement-quote {
+    color: #f36aaf;
+
+    font-size: 76px;
+    font-weight: 800;
+
+    line-height: 0.8;
+    margin-bottom: 30px;
+
+    font-family: Arial, sans-serif;
+}
+
+/* MAIN HEADING */
+
+.founder-statement-title {
+    color: #ffffff;
+
+    font-size: clamp(38px, 5.5vw, 66px);
+    font-weight: 750;
+
+    line-height: 1.08;
+    letter-spacing: -2.5px;
+
+    margin: 0 0 30px;
+}
+
+/* DESCRIPTION */
+
+.founder-statement-description {
+    max-width: 800px;
+
+    color: #d1ced8;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    line-height: 1.8;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .founder-statement-section {
+        min-height: 380px;
+        padding: 70px 25px;
+    }
+
+    .founder-statement-quote {
+        font-size: 65px;
+        margin-bottom: 25px;
+    }
+
+    .founder-statement-title {
+        font-size: 43px;
+        letter-spacing: -1.5px;
+        margin-bottom: 25px;
+    }
+
+    .founder-statement-description {
+        font-size: 14px;
+        max-width: 550px;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 480px) {
+
+    .founder-statement-section {
+        min-height: 350px;
+        padding: 65px 20px;
+    }
+
+    .founder-statement-quote {
+        font-size: 55px;
+        margin-bottom: 22px;
+    }
+
+    .founder-statement-title {
+        font-size: 34px;
+        line-height: 1.15;
+        letter-spacing: -1px;
+        margin-bottom: 22px;
+    }
+
+    .founder-statement-description {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+}
+/* =====================================
+   SECTION 5 - WORK WITH US CTA
+===================================== */
+
+.work-with-us-section {
+    width: 100%;
+    min-height: 440px;
+
+    background: rgb(238, 238, 249);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 85px 25px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.work-with-us-container {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* EYEBROW TEXT */
+
+.work-with-us-eyebrow {
+    color: #f33393;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+
+    margin-bottom: 22px;
+}
+
+
+/* MAIN HEADING */
+
+.work-with-us-title {
+    color: black;
+
+    font-size: 75px;
+    font-weight: 750;
+
+    line-height: 0.98;
+    letter-spacing: -3px;
+
+    margin: 0 0 28px;
+}
+
+
+/* DESCRIPTION */
+
+.work-with-us-description {
+    color: #656566;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    line-height: 1.8;
+
+    max-width: 700px;
+
+    margin: 0 0 30px;
+}
+
+
+/* CTA BUTTON */
+
+.work-with-us-button {
+    min-width: 175px;
+    min-height: 52px;
+
+    padding: 16px 28px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    background: black;
+    color: white;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+
+/* BUTTON HOVER */
+
+.work-with-us-button:hover {
+    background: #f9238e;
+    color: #ffffff;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 30px rgba(243, 106, 175, 0.2);
+}
+
+
+/* BUTTON ARROW */
+
+.work-with-us-button-arrow {
+    font-size: 17px;
+    transition: transform 0.3s ease;
+}
+
+.work-with-us-button:hover
+.work-with-us-button-arrow {
+    transform: translateX(5px);
+}
+
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .work-with-us-section {
+        min-height: 390px;
+        padding: 75px 25px;
+    }
+
+    .work-with-us-eyebrow {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+
+    .work-with-us-title {
+        font-size: 48px;
+        letter-spacing: -2px;
+        line-height: 1.05;
+    }
+
+    .work-with-us-description {
+        font-size: 14px;
+        max-width: 550px;
+    }
+
+    .work-with-us-button {
+        min-height: 50px;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 480px) {
+
+    .work-with-us-section {
+        min-height: 350px;
+        padding: 65px 20px;
+    }
+
+    .work-with-us-eyebrow {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .work-with-us-title {
+        font-size: 38px;
+        line-height: 1.08;
+        letter-spacing: -1.5px;
+        margin-bottom: 22px;
+    }
+
+    .work-with-us-description {
+        font-size: 12px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    .work-with-us-button {
+        min-width: 165px;
+        min-height: 48px;
+
+        font-size: 12px;
+        border-radius: 12px;
+    }
+
+}

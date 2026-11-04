@@ -1,0 +1,177 @@
+.engagement-section {
+  width: 100%;
+  padding: 65px 50px 80px;
+  background-color: #ffffff;
+  color: #111111;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1330px;
+}
+
+/* Small heading */
+
+.engagement-eyebrow {
+  margin-bottom: 25px;
+      padding-left: 90px;
+
+}
+
+.engagement-eyebrow span {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #555555;
+  
+}
+
+.engagement-line {
+  width: 42px;
+  height: 3px;
+  background-color: #e83766;
+  margin-top: 16px;
+}
+
+/* Main heading */
+
+.engagement-title {
+  font-size: clamp(30px, 3.2vw, 44px);
+  line-height: 1.25;
+  font-weight: 750;
+  letter-spacing: -1px;
+  margin: 0 0 28px;
+  color: #111111;
+      padding-left: 90px;
+
+}
+
+.engagement-title span {
+  color: #e83766;
+}
+
+/* Four cards */
+
+.engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 30px;
+  padding-left: 90px;
+  
+
+}
+
+/* Individual card */
+
+.engagement-card {
+  position: relative;
+  padding: 32px 25px;
+  min-height: 200px;
+  border: 1px solid lightgray;
+  border-radius: 12px;
+  gap: 20;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.engagement-card:hover{
+transform: translateY(-4px);
+box-shadow: 0px 10px 30px rgb(181, 180, 180);
+}
+/* Highlighted second card */
+
+.engagement-card.featured-card {
+  border-color: #c9c2c5;
+  border: 1px solid rgb(229, 65, 120);
+}
+
+/* Most common badge */
+
+.common-badge {
+  position: absolute;
+  top: -12px;
+  left: 17px;
+  padding: 6px 15px;
+  border-radius: 20px;
+  background-color: #e83766;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+
+/* Stage label */
+
+.model-stage {
+  margin: 0 0 17px;
+  color: #e83766;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+/* Card title */
+
+.engagement-card h2 {
+  margin: 0 0 15px;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #111111;
+}
+
+/* Card description */
+
+.model-description {
+  margin: 0;
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+/* Responsive tablet layout */
+
+@media (max-width: 1000px) {
+  .engagement-section {
+    padding: 55px 50px;
+  }
+
+  .engagement-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+  }
+
+  .engagement-card {
+    padding: 28px 20px;
+  }
+
+  .engagement-title {
+    font-size: 36px;
+  }
+}
+
+/* Responsive mobile layout */
+
+@media (max-width: 600px) {
+  .engagement-section {
+    padding: 40px 20px;
+  }
+
+  .engagement-title {
+    font-size: 30px;
+    letter-spacing: -0.5px;
+  }
+
+  .engagement-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .engagement-card {
+    min-height: auto;
+    padding: 25px 20px;
+  }
+
+  .engagement-card.featured-card {
+    margin-top: 10px;
+  }
+}

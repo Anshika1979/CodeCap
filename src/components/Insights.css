@@ -1,0 +1,1427 @@
+/* ==========================================
+   INSIGHTS PAGE
+========================================== */
+
+.insights-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #080808;
+  overflow: hidden;
+}
+
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.insights-hero {
+  width: 100%;
+  min-height: 620px;
+  background: white;
+
+  display: flex;
+  align-items: center;
+
+  padding: 18px 6% 75px;
+
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+/* ==========================================
+   CONTENT CONTAINER
+========================================== */
+
+.insights-container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/* ==========================================
+   TOP BADGE
+========================================== */
+
+.insights-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 10px 17px;
+
+  border: 2px solid rgb(244, 43, 120);
+  border-radius: 30px;
+
+  color: #f92585;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+  margin-bottom: 34px;
+
+  background: rgb(252, 207, 223);
+}
+
+
+/* ==========================================
+   MAIN HEADING
+========================================== */
+
+.insights-heading {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+
+  font-size: 75px;
+  font-weight: 800;
+
+  line-height: 1.2;
+  letter-spacing: -2px;
+
+  text-align: left;
+}
+
+
+/* WHITE HEADING TEXT */
+
+.insights-white {
+  color: black;
+}
+
+
+/* PINK HEADING TEXT */
+
+.insights-pink {
+  color: black;
+}
+
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.insights-description {
+  max-width: 850px;
+
+  color: #2f2f2f;
+
+  font-size: 20px;
+  font-weight: 400;
+
+  line-height: 1.9;
+
+  margin-top: 36px;
+  margin-bottom: 0;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+
+  .insights-hero {
+    min-height: 580px;
+    padding: 75px 6%;
+  }
+
+  .insights-heading {
+    font-size: 85px;
+    letter-spacing: -4px;
+  }
+
+  .insights-description {
+    font-size: 17px;
+    max-width: 700px;
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+  .insights-hero {
+    min-height: 550px;
+    padding: 80px 22px;
+  }
+
+  .insights-badge {
+    font-size: 10px;
+    padding: 8px 13px;
+    margin-bottom: 30px;
+  }
+
+  .insights-heading {
+    font-size: 53px;
+    line-height: 1;
+    letter-spacing: -3px;
+  }
+
+  .insights-description {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 28px;
+  }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 380px) {
+
+  .insights-heading {
+    font-size: 43px;
+    letter-spacing: -2px;
+  }
+
+  .insights-description {
+    font-size: 14px;
+  }
+
+}
+
+
+/* ==========================================
+   FEATURED INSIGHTS SECTION
+========================================== */
+
+.featured-insights {
+  width: 100%;
+  background: #080808;
+
+  padding: 45px 6% 100px;
+
+  box-sizing: border-box;
+}
+
+.featured-container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+
+/* FEATURED LABEL */
+
+.featured-label {
+  color: #e8266d;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+
+  margin-bottom: 14px;
+}
+
+
+/* FEATURED ARTICLE CARD */
+
+.featured-article {
+  position: relative;
+
+  width: 100%;
+  min-height: 440px;
+
+  padding: 55px 42px;
+
+  box-sizing: border-box;
+
+  border-radius: 27px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      ellipse at 95% 0%,
+      rgba(116, 46, 75, 0.24),
+      transparent 45%
+    ),
+    linear-gradient(
+      120deg,
+      #15151d,
+      #101018 65%,
+      #1b1119
+    );
+
+  border: 1px solid rgba(255,255,255,0.05);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.3);
+
+  transition: transform 0.35s ease;
+}
+
+
+/* CARD HOVER */
+
+.featured-article:hover {
+  transform: translateY(-5px);
+}
+
+
+/* CATEGORY */
+
+.featured-category {
+  color: #49b4f1;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 38px;
+}
+
+
+/* ARTICLE NUMBER */
+
+.featured-number {
+  position: absolute;
+
+  top: 40px;
+  right: 40px;
+
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.07);
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+
+/* ARTICLE CONTENT */
+
+.featured-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ARTICLE HEADING */
+
+.featured-title {
+  max-width: 850px;
+
+  color: #ffffff;
+
+  font-size: 50px;
+
+  font-weight: 800;
+
+  line-height: 1.04;
+
+  letter-spacing: -2px;
+
+  margin: 0 0 18px;
+}
+
+
+/* ARTICLE DESCRIPTION */
+
+.featured-description {
+  max-width: 750px;
+
+  color: #c5c5ce;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  line-height: 1.8;
+
+  margin: 0 0 28px;
+}
+
+
+/* ARTICLE DETAILS */
+
+.featured-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 25px;
+
+  color: #c5c5ce;
+
+  font-size: 10px;
+
+  font-weight: 800;
+}
+
+
+/* FEATURED BUTTON */
+
+.featured-button {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: auto;
+  min-width: 115px;
+  height: 38px;
+
+  padding: 0 16px;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  color: #151515;
+  background: #ffffff;
+
+  border: none;
+  border-radius: 10px;
+
+  margin-top: 25px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.featured-button:hover {
+  background: #ff91aa;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.featured-button span {
+  font-size: 17px;
+}
+
+
+/* ==========================================
+   FEATURED TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+
+  .featured-article {
+    min-height: 420px;
+    padding: 45px 32px;
+  }
+
+  .featured-title {
+    font-size: 36px;
+  }
+
+}
+
+
+/* ==========================================
+   FEATURED MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+  .featured-insights {
+    padding: 35px 22px 65px;
+  }
+
+  .featured-article {
+    min-height: 420px;
+    padding: 38px 22px;
+    border-radius: 20px;
+  }
+
+  .featured-category {
+    margin-bottom: 45px;
+    font-size: 9px;
+  }
+
+  .featured-number {
+    top: 23px;
+    right: 20px;
+
+    width: 36px;
+    height: 36px;
+
+    font-size: 12px;
+  }
+
+  .featured-title {
+    font-size: 29px;
+    line-height: 1.12;
+    letter-spacing: -1.2px;
+  }
+
+  .featured-title br {
+    display: none;
+  }
+
+  .featured-description {
+    font-size: 11px;
+    line-height: 1.8;
+  }
+
+  .featured-meta {
+    gap: 12px;
+    font-size: 9px;
+  }
+
+}
+
+
+/* ==========================================
+   FEATURED SMALL MOBILE
+========================================== */
+
+@media (max-width: 380px) {
+
+  .featured-title {
+    font-size: 26px;
+  }
+
+  .featured-meta {
+    gap: 9px;
+  }
+
+}
+
+
+/* ==========================================
+   EXPLORE INSIGHTS SECTION
+========================================== */
+
+.insights-section {
+  width: 100%;
+
+  padding: 35px 6% 110px;
+
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 100%,
+      rgba(20, 37, 75, 0.20),
+      transparent 55%
+    ),
+    #08090e;
+}
+
+
+/* EXPLORE CONTAINER */
+
+.insights-section .insights-container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/* ==========================================
+   EXPLORE HEADING
+========================================== */
+
+.explore-heading {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.explore-eyebrow {
+  display: inline-block;
+
+  color: #f63880;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+/* ==========================================
+   CATEGORY FILTERS
+========================================== */
+
+.insights-filters {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 45px;
+}
+
+
+/* FILTER BUTTON */
+
+.insights-filter {
+  padding: 13px 20px;
+
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 40px;
+
+  background: #11131d;
+
+  color: #e2e2e9;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+/* FILTER HOVER */
+
+.insights-filter:hover {
+  border-color: #f63880;
+  color: #f63880;
+
+  transform: translateY(-2px);
+}
+
+
+/* ACTIVE FILTER */
+
+.insights-filter.active {
+  background: #f63880;
+  border-color: #f63880;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 5px 20px rgba(255,141,169,0.15);
+}
+
+
+/* ==========================================
+   INSIGHTS CARDS GRID
+========================================== */
+
+.insights-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 20px;
+
+  align-items: stretch;
+}
+
+
+/* ==========================================
+   INDIVIDUAL INSIGHT CARD
+========================================== */
+
+.insight-card {
+  position: relative;
+
+  min-height: 405px;
+
+  padding: 30px 30px 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      145deg,
+      #151925,
+      #101521 70%,
+      #11131d
+    );
+
+  border: 1px solid rgba(255,255,255,0.09);
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* CARD HOVER */
+
+.insight-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(255,141,169,0.5);
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.3);
+}
+
+
+/* CARD TOP */
+
+.insight-card-top {
+  width: 100%;
+}
+
+
+/* ==========================================
+   CARD CATEGORY
+========================================== */
+
+.insight-card-tag {
+  display: block;
+
+  color: #38b9f1;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 0.4px;
+
+  line-height: 1.5;
+
+  margin-bottom: 27px;
+}
+
+
+/* ==========================================
+   CARD TITLE
+========================================== */
+
+.insight-card h2 {
+  color: #ffffff;
+
+  font-size: 24px;
+
+  font-weight: 800;
+
+  line-height: 1.16;
+
+  letter-spacing: -0.8px;
+
+  max-width: 440px;
+
+  margin: 0;
+
+  transition: color 0.3s ease;
+}
+
+
+/* TITLE HOVER */
+
+.insight-card:hover h2 {
+  color: #f63880;
+}
+
+
+/* ==========================================
+   CARD FOOTER
+========================================== */
+
+.insight-card-footer {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 50px;
+}
+
+
+/* DATE AND READ TIME */
+
+.insight-card-footer span {
+  color: #e0e0e7;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* ==========================================
+   ARROW BUTTON
+========================================== */
+
+.insight-arrow {
+  flex-shrink: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #f12271;
+
+  font-size: 29px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+}
+
+
+/* ARROW HOVER */
+
+.insight-card:hover .insight-arrow {
+  transform: translateX(8px);
+}
+
+
+/* ==========================================
+   EMPTY CATEGORY MESSAGE
+========================================== */
+
+.no-insights {
+  grid-column: 1 / -1;
+
+  width: 100%;
+
+  color: #a0a0aa;
+
+  padding: 50px 0;
+
+  font-size: 16px;
+}
+
+
+/* ==========================================
+   ARTICLE DETAIL VIEW
+========================================== */
+
+.insight-detail {
+  width: 100%;
+
+  min-height: 500px;
+
+  padding: 45px;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #151925,
+      #101521
+    );
+
+  animation: insightFade 0.4s ease;
+}
+
+
+/* ==========================================
+   BACK BUTTON
+========================================== */
+
+.insight-back {
+  display: inline-block;
+
+  margin-bottom: 45px;
+
+  padding: 12px 20px;
+
+  border: 1px solid rgba(255,141,169,0.5);
+
+  border-radius: 30px;
+
+  background: transparent;
+
+  color: #e52e7a;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+/* BACK BUTTON HOVER */
+
+.insight-back:hover {
+  background: #ff91aa;
+  color: #ffffff;
+}
+
+
+/* ==========================================
+   DETAIL CATEGORY
+========================================== */
+
+.insight-detail-tag {
+  display: block;
+
+  color: #83d9ff;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  margin-bottom: 22px;
+}
+
+
+/* ==========================================
+   DETAIL TITLE
+========================================== */
+
+.insight-detail h1 {
+  max-width: 850px;
+
+  color: #ffffff;
+
+  font-size: clamp(30px, 5vw, 52px);
+
+  line-height: 1.12;
+
+  font-weight: 800;
+
+  margin: 0 0 25px;
+}
+
+
+/* ==========================================
+   DETAIL META
+========================================== */
+
+.insight-detail-meta {
+  color: #f52c7d;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  margin-bottom: 35px;
+}
+
+
+/* ==========================================
+   DETAIL DESCRIPTION
+========================================== */
+
+.insight-detail-description {
+  max-width: 850px;
+
+  color: #d0d0d9;
+
+  font-size: 19px;
+
+  line-height: 1.7;
+
+  margin-bottom: 30px;
+}
+
+
+/* ==========================================
+   DETAIL CONTENT
+========================================== */
+
+.insight-detail-content {
+  max-width: 850px;
+
+  color: #aeb0bd;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+}
+
+
+/* BOTTOM BACK BUTTON */
+
+.bottom-back {
+  margin-top: 45px;
+  margin-bottom: 0;
+}
+
+
+/* ==========================================
+   DETAIL ANIMATION
+========================================== */
+
+@keyframes insightFade {
+
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* ==========================================
+   EXPLORE TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1024px) {
+
+  .insights-section {
+    padding: 35px 4% 80px;
+  }
+
+  .insights-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .insight-card {
+    min-height: 380px;
+    padding: 25px;
+  }
+
+  .insight-card h2 {
+    font-size: 23px;
+  }
+
+}
+
+
+/* ==========================================
+   EXPLORE MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+  .insights-section {
+    padding: 35px 22px 65px;
+  }
+
+  .explore-heading {
+    margin-bottom: 25px;
+  }
+
+  .explore-eyebrow {
+    font-size: 12px;
+  }
+
+  .insights-filters {
+    gap: 9px;
+    margin-bottom: 30px;
+  }
+
+  .insights-filter {
+    padding: 10px 15px;
+    font-size: 11px;
+  }
+
+  .insights-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .insight-card {
+    min-height: 330px;
+
+    padding: 25px 22px;
+
+    border-radius: 23px;
+  }
+
+  .insight-card h2 {
+    font-size: 24px;
+  }
+
+  .insight-card-footer {
+    margin-top: 45px;
+  }
+
+  .insight-detail {
+    padding: 25px 20px;
+  }
+
+  .insight-back {
+    margin-bottom: 35px;
+  }
+
+  .insight-detail h1 {
+    font-size: 32px;
+  }
+
+  .insight-detail-description {
+    font-size: 16px;
+  }
+
+  .insight-detail-content {
+    font-size: 14px;
+  }
+
+}
+
+
+/* ==========================================
+   EXPLORE SMALL MOBILE
+========================================== */
+
+@media (max-width: 380px) {
+
+  .insights-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .insight-card {
+    padding: 22px 18px;
+  }
+
+  .insight-card h2 {
+    font-size: 21px;
+  }
+
+  .insight-card-footer span {
+    font-size: 10px;
+  }
+
+  .insight-detail h1 {
+    font-size: 27px;
+  }
+
+}
+
+/* ==========================================
+   06. NEWSLETTER SUBSCRIPTION SECTION
+========================================== */
+
+.insights-subscribe {
+  width: 100%;
+  min-height: 650px;
+
+  background: rgb(236, 237, 249);
+  color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 100px 25px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* BACKGROUND GLOW */
+
+.insights-subscribe::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 350px;
+
+  background: rgba(115, 54, 160, 0.10);
+
+  filter: blur(120px);
+
+  top: 20%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+}
+
+
+/* CONTENT */
+
+.subscribe-content {
+  width: 100%;
+  max-width: 750px;
+
+  text-align: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* EYEBROW */
+
+.subscribe-label {
+  display: inline-block;
+
+  color: #f23587;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 20px;
+}
+
+
+/* HEADING */
+
+.subscribe-heading {
+  font-size: 75px;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+
+  color: black;
+
+  margin-bottom: 28px;
+}
+
+
+/* DESCRIPTION */
+
+.subscribe-description {
+  max-width: 680px;
+
+  margin: 0 auto 38px;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  font-weight: 400;
+
+  color: #3d3d3d;
+}
+
+
+/* FORM */
+
+.subscribe-form {
+  width: 100%;
+  max-width: 630px;
+
+  min-height: 72px;
+
+  margin: 0 auto;
+
+  padding: 6px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  background: black;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 20px;
+
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.3);
+
+  transition: border 0.3s ease;
+}
+
+
+.subscribe-form:focus-within {
+  border-color: rgba(237, 123, 158, 0.7);
+}
+
+
+/* EMAIL INPUT */
+
+.subscribe-form input {
+  flex: 1;
+
+  min-width: 0;
+
+  height: 55px;
+
+  padding: 0 18px;
+
+  background: transparent;
+
+  border: none;
+  outline: none;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-family: inherit;
+}
+
+
+.subscribe-form input::placeholder {
+  color: #e0dfe6;
+  opacity: 1;
+}
+
+
+/* BUTTON */
+
+.subscribe-form button {
+  min-width: 105px;
+
+  height: 55px;
+
+  padding: 0 20px;
+
+  border: none;
+
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  color: #35313a;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+.subscribe-form button:hover {
+  background: #ed7b9e;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+/* MESSAGE */
+
+.subscribe-message {
+  margin-top: 18px;
+
+  color: #ed7b9e;
+
+  font-size: 14px;
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 768px) {
+
+  .insights-subscribe {
+    min-height: 550px;
+    padding: 80px 22px;
+  }
+
+  .subscribe-heading {
+    font-size: 58px;
+    letter-spacing: -3px;
+  }
+
+  .subscribe-description {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .subscribe-form {
+    min-height: 65px;
+  }
+
+  .subscribe-form input {
+    font-size: 13px;
+    padding: 0 12px;
+  }
+
+  .subscribe-form button {
+    min-width: 95px;
+    height: 50px;
+    padding: 0 12px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .insights-subscribe {
+    min-height: 500px;
+    padding: 70px 18px;
+  }
+
+  .subscribe-label {
+    font-size: 11px;
+  }
+
+  .subscribe-heading {
+    font-size: 43px;
+    letter-spacing: -2.5px;
+  }
+
+  .subscribe-description {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .subscribe-form {
+    gap: 5px;
+    padding: 5px;
+    border-radius: 15px;
+  }
+
+  .subscribe-form input {
+    padding: 0 8px;
+    font-size: 12px;
+  }
+
+  .subscribe-form button {
+    min-width: 85px;
+    height: 46px;
+    font-size: 11px;
+    border-radius: 11px;
+  }
+
+}

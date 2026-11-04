@@ -1,0 +1,1541 @@
+/* ==========================================
+   PODCAST PAGE
+========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.podcast-page {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  color: black;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.podcast-hero {
+  width: 100%;
+  min-height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding: 80px 6%;
+
+  background:
+   white;
+}
+
+
+/* ==========================================
+   BACKGROUND GLOW
+========================================== */
+
+.podcast-glow {
+  position: absolute;
+
+  top: -100px;
+  right: -100px;
+
+  width: 300px;
+  height: 300px;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 103, 160, 0.07),
+    transparent 70%
+  );
+
+  pointer-events: none;
+}
+
+
+/* ==========================================
+   CONTENT CONTAINER
+========================================== */
+
+.podcast-container {
+  width: 100%;
+  max-width: 1200px;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ==========================================
+   BRAND LABEL
+========================================== */
+
+.podcast-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 18px;
+
+  border: 2px solid #f32976;
+
+  border-radius: 30px;
+
+  background: rgba(248, 183, 213, 0.966);
+
+  color: #f32976;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 32px;
+}
+
+
+/* ==========================================
+   MAIN HEADING
+========================================== */
+
+.podcast-title {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 75px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  letter-spacing: -2px;
+
+  margin-bottom: 36px;
+}
+
+
+/* First line */
+
+.podcast-title-top {
+  color: black;
+
+  display: block;
+}
+
+
+/* Second line */
+
+.podcast-title-bottom {
+  display: block;
+  white-space: nowrap;
+}
+
+
+/* ==========================================
+   BUILD GRADIENT
+========================================== */
+
+.gradient-build {
+  background: black;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* ==========================================
+   BRIEF GRADIENT
+========================================== */
+
+.gradient-brief {
+  background: black;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.podcast-description {
+  max-width: 900px;
+
+  margin-top: 25px;
+  margin-bottom: 32px;
+}
+
+.podcast-description p {
+  color: #3f3e3f;
+
+  font-size: 19px;
+  font-weight: 300;
+
+  line-height: 1.9;
+
+  margin-bottom: 5px;
+}
+
+
+/* ==========================================
+   LISTEN LABEL
+========================================== */
+
+.podcast-listen {
+  display: inline-block;
+
+  color: #25a6eb;
+
+  font-size: 13px;
+  font-weight: 900;
+
+  letter-spacing: 2px;
+
+  margin-top: 5px;
+}
+
+
+/* ==========================================
+   PODCAST PLATFORM BUTTONS
+========================================== */
+
+.podcast-listen-section {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.podcast-platforms {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 42px;
+}
+
+.podcast-platform-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 21px;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+
+  border-radius: 50px;
+
+  background: rgba(0, 0, 0, 0.025);
+
+  color: #111111;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+
+/* HOVER EFFECT */
+
+.podcast-platform-btn:hover {
+  background: #43cff1;
+
+  border-color: #43cff1;
+
+  color: #080808;
+
+  transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 1024px) {
+
+  .podcast-hero {
+    padding: 70px 6%;
+  }
+
+  .podcast-title {
+    font-size: 105px;
+    letter-spacing: -5px;
+  }
+
+  .podcast-description p {
+    font-size: 17px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .podcast-hero {
+    min-height: 100vh;
+    padding: 90px 6%;
+  }
+
+  .podcast-brand {
+    font-size: 11px;
+    padding: 10px 14px;
+    margin-bottom: 30px;
+  }
+
+  .podcast-title {
+    font-size: clamp(58px, 12vw, 90px);
+    letter-spacing: -4px;
+    line-height: 0.95;
+    margin-bottom: 28px;
+  }
+
+  .podcast-description {
+    margin-top: 20px;
+  }
+
+  .podcast-description p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+
+  .podcast-listen {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  /* PLATFORM BUTTONS */
+
+  .podcast-platforms {
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .podcast-platform-btn {
+    padding: 11px 17px;
+    font-size: 12px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .podcast-hero {
+    padding: 100px 22px 70px;
+  }
+
+  .podcast-title {
+    font-size: 58px;
+    letter-spacing: -3px;
+  }
+
+  .podcast-description p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .podcast-listen {
+    font-size: 10px;
+    line-height: 1.8;
+  }
+
+  /* PLATFORM BUTTONS */
+
+  .podcast-platforms {
+    gap: 9px;
+    margin-top: 25px;
+  }
+
+  .podcast-platform-btn {
+    padding: 10px 14px;
+    font-size: 11px;
+  }
+
+}
+
+/* ==========================================
+   FOUR WAYS SECTION
+========================================== */
+
+.podcast-access-section {
+  width: 100%;
+  min-height: 600px;
+
+  background: #080808;
+
+  padding: 80px 7.5% 100px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.podcast-access-container {
+  width: 100%;
+  max-width: 1400px;
+}
+
+
+/* ==========================================
+   SECTION HEADER
+========================================== */
+
+.podcast-access-header {
+  margin-bottom: 55px;
+}
+
+.podcast-access-label {
+  display: inline-block;
+
+  color: #e34b65;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  margin-bottom: 18px;
+}
+
+.podcast-access-header h2 {
+  display: flex;
+  flex-direction: column;
+
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -2.5px;
+
+  color: #ffffff;
+}
+
+.podcast-heading-muted {
+  color: #77777f;
+}
+
+
+/* ==========================================
+   ACCESS MODEL GRID
+========================================== */
+
+.podcast-access-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 14px;
+}
+
+
+/* ==========================================
+   ACCESS MODEL CARD
+========================================== */
+
+.podcast-access-card {
+  min-height: 270px;
+
+  background: #101525;
+
+  border: 1px solid rgba(255, 255, 255, 0.025);
+
+  border-radius: 20px;
+
+  padding: 30px 27px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: 
+    transform 0.35s ease,
+    background 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.podcast-access-card:hover {
+  transform: translateY(-7px);
+
+  background: #151e32;
+
+  border-color: rgba(42, 183, 255, 0.25);
+}
+
+
+/* ==========================================
+   CARD BLUE DOT
+========================================== */
+
+.podcast-card-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.podcast-card-number {
+  display: block;
+font-size: 14px;
+  font-weight: 700;
+
+  color: #43cff1;
+
+  margin-right: 10px;
+}
+
+
+/* ==========================================
+   CARD CONTENT
+========================================== */
+
+.podcast-card-content {
+  margin-top: 55px;
+}
+
+.podcast-card-content h3 {
+  color: #ffffff;
+
+  font-size: 21px;
+  font-weight: 700;
+
+  line-height: 1.25;
+
+  margin-bottom: 14px;
+}
+
+.podcast-card-content p {
+  color: #858b99;
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 1.7;
+padding-bottom: 40px;
+  max-width: 280px;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1024px) {
+
+  .podcast-access-section {
+    padding: 75px 5%;
+  }
+
+  .podcast-access-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .podcast-access-card {
+    min-height: 250px;
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+  .podcast-access-section {
+    padding: 65px 22px 75px;
+  }
+
+  .podcast-access-header {
+    margin-bottom: 35px;
+  }
+
+  .podcast-access-header h2 {
+    font-size: 39px;
+    letter-spacing: -1.8px;
+  }
+
+  .podcast-access-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .podcast-access-card {
+    min-height: 210px;
+    padding: 26px 23px;
+    border-radius: 16px;
+  }
+
+  .podcast-card-content {
+    margin-top: 40px;
+  }
+
+  .podcast-card-content h3 {
+    font-size: 20px;
+  }
+
+  .podcast-card-content p {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+}
+
+/* ==========================================
+   RECENT CONVERSATIONS SECTION
+========================================== */
+
+.recent-episodes {
+  width: 100%;
+  min-height: 650px;
+
+  background: #080911;
+  color: #ffffff;
+
+  padding: 90px 7.5% 110px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ==========================================
+   EPISODES CONTAINER
+========================================== */
+
+.episodes-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+/* ==========================================
+   SECTION HEADING
+========================================== */
+
+.episodes-heading {
+  margin-bottom: 65px;
+}
+
+.episodes-eyebrow {
+  display: block;
+
+  color: #db1d79;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 20px;
+}
+
+
+.episodes-heading h2 {
+  display: flex;
+  flex-direction: column;
+
+  font-size: clamp(45px, 5vw, 68px);
+
+  font-weight: 800;
+
+  line-height: 1.02;
+
+  letter-spacing: -3px;
+
+  color: white;
+}
+
+
+/* ==========================================
+   EPISODE LIST
+========================================== */
+
+.episodes-list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+/* ==========================================
+   EPISODE CARD
+========================================== */
+
+.episode-card {
+  width: 100%;
+  min-height: 115px;
+
+  display: grid;
+
+  grid-template-columns: 105px 1fr 90px;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 24px 28px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border: 1px solid rgba(255, 255, 255, 0.055);
+
+  border-radius: 18px;
+
+  transition: all 0.3s ease;
+}
+
+
+/* ==========================================
+   CARD HOVER
+========================================== */
+
+.episode-card:hover {
+  background: #101525;
+
+  border-color: rgba(255, 255, 255, 0.13);
+
+  transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   EPISODE NUMBER
+========================================== */
+
+.episode-number {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  white-space: nowrap;
+}
+
+
+.episode-number span:first-child {
+  color: #35c6eb;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* ==========================================
+   NEW BADGE
+========================================== */
+
+.episode-new {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #eb2387;
+
+  color: #ffffff;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.5px;
+
+  padding: 5px 10px;
+
+  border-radius: 5px;
+}
+
+
+/* ==========================================
+   EPISODE CONTENT
+========================================== */
+
+.episode-content {
+  min-width: 0;
+}
+
+
+.episode-content h3 {
+  color: white;
+
+  font-size: 19px;
+
+  font-weight: 750;
+
+  line-height: 1.4;
+
+  letter-spacing: -0.3px;
+
+  margin-bottom: 9px;
+}
+
+
+.episode-content p {
+  color: #b5b7c2;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  line-height: 1.6;
+}
+
+
+/* ==========================================
+   EPISODE DETAILS
+========================================== */
+
+.episode-details {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 7px;
+
+  white-space: nowrap;
+}
+
+
+.episode-duration {
+  color: #d9d9e0;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+.episode-date {
+  color: #a6a6b1;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1024px) {
+
+  .recent-episodes {
+    padding: 80px 5%;
+  }
+
+  .episode-card {
+    grid-template-columns: 85px 1fr 75px;
+
+    gap: 15px;
+
+    padding: 22px 18px;
+  }
+
+  .episode-content h3 {
+    font-size: 16px;
+  }
+
+  .episode-content p {
+    font-size: 11px;
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+  .recent-episodes {
+    padding: 65px 22px 75px;
+  }
+
+  .episodes-heading {
+    margin-bottom: 40px;
+  }
+
+  .episodes-heading h2 {
+    font-size: 43px;
+
+    letter-spacing: -2px;
+  }
+
+  .episode-card {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    padding: 22px 18px;
+
+    border-radius: 15px;
+  }
+
+  .episode-number {
+    width: 100%;
+  }
+
+  .episode-content h3 {
+    font-size: 16px;
+
+    line-height: 1.45;
+  }
+
+  .episode-content p {
+    font-size: 11px;
+
+    line-height: 1.7;
+  }
+
+  .episode-details {
+    width: 100%;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-top: 13px;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+
+}
+
+/* ==========================================
+   VOICES FROM THE ECOSYSTEM SECTION
+========================================== */
+
+.ecosystem-section {
+  width: 100%;
+  background: #e7e6e6;
+  color: #111111;
+  padding: 70px 0 90px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ecosystem-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 7.5%;
+}
+
+
+/* ==========================================
+   SECTION LABEL
+========================================== */
+
+.ecosystem-label {
+  display: inline-block;
+
+  color: #f42d7d;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+
+/* ==========================================
+   MAIN HEADING
+========================================== */
+
+.ecosystem-heading {
+  display: flex;
+  flex-direction: column;
+
+  font-size: clamp(38px, 5vw, 64px);
+
+  font-weight: 800;
+
+  line-height: 1.02;
+
+  letter-spacing: -2.5px;
+
+  color: #111111;
+
+  margin-bottom: 45px;
+}
+
+.ecosystem-heading span {
+  display: block;
+  color: black;
+}
+
+
+/* ==========================================
+   ECOSYSTEM CARDS GRID
+========================================== */
+
+.ecosystem-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 14px;
+}
+
+
+/* ==========================================
+   ECOSYSTEM CARD
+========================================== */
+
+.ecosystem-card {
+  width: 100%;
+
+  height: 170px;
+
+  background: white;
+
+  border: 1px solid rgba(0, 0, 0, 0.015);
+
+  border-radius: 20px;
+
+  padding: 25px 18px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  position: relative;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* Alternate card backgrounds */
+
+.ecosystem-card:nth-child(even) {
+  background: white;
+}
+
+
+/* ==========================================
+   CARD HOVER EFFECT
+========================================== */
+
+.ecosystem-card:hover {
+  
+
+  border-color: rgba(0, 0, 0, 0.06);
+
+  transform: translateY(-5px);
+}
+
+
+/* ==========================================
+   CARD TITLE
+========================================== */
+
+.ecosystem-card-title {
+  position: relative;
+
+  display: inline-block;
+
+  padding-top: 9px;
+
+  color: #111111;
+
+  font-size: 15px;
+
+  font-weight: 750;
+
+  line-height: 1.3;
+}
+
+
+/* ==========================================
+   SMALL SERIAL NUMBERS
+========================================== */
+
+.ecosystem-number {
+  position: absolute;
+
+  top: -5px;
+
+  left: 0;
+
+  color: #e23184;
+
+  font-size: 8px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: 0;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1024px) {
+
+  .ecosystem-section {
+    padding: 75px 0 85px;
+  }
+
+  .ecosystem-container {
+    padding: 0 5%;
+  }
+
+  .ecosystem-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+  }
+
+  .ecosystem-card {
+    height: 150px;
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+  .ecosystem-section {
+    padding: 65px 0 75px;
+  }
+
+  .ecosystem-container {
+    padding: 0 22px;
+  }
+
+  .ecosystem-heading {
+    font-size: 39px;
+
+    letter-spacing: -1.8px;
+
+    margin-bottom: 35px;
+  }
+
+  .ecosystem-grid {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .ecosystem-card {
+    height: 125px;
+
+    padding: 22px 18px;
+
+    border-radius: 16px;
+  }
+
+  .ecosystem-card-title {
+    font-size: 14px;
+  }
+
+}
+/* =========================================
+   SUBSCRIBE SECTION
+   NEVER MISS AN EPISODE
+========================================= */
+
+.subscribe-section {
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 90px 20px;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            #211b29 0%,
+            #13101a 55%,
+            #09080d 100%
+        );
+
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* Background Glow */
+
+.subscribe-glow {
+    position: absolute;
+
+    width: 550px;
+    height: 350px;
+
+    background: rgba(126, 75, 145, 0.12);
+
+    filter: blur(120px);
+
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    pointer-events: none;
+}
+
+/* Subscribe Content */
+
+.subscribe-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 800px;
+
+    margin: auto;
+}
+
+/* Subscribe Label */
+
+.subscribe-label {
+    display: inline-block;
+
+    color: #fa3b84;
+
+    font-size: 12px;
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 20px;
+}
+
+/* Main Heading */
+
+.subscribe-title {
+    color: #ffffff;
+
+    font-size: clamp(48px, 7vw, 76px);
+
+    font-weight: 800;
+
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 25px;
+}
+
+/* Description */
+
+.subscribe-description {
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    color: #d0cbd5;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    line-height: 1.7;
+}
+
+/* Platform Buttons Container */
+
+.subscribe-platforms {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+/* Individual Buttons */
+
+.subscribe-platform-btn {
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 18px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    background: rgba(117, 96, 133, 0.22);
+
+    border: 1px solid rgba(160, 135, 177, 0.35);
+
+    border-radius: 13px;
+
+    transition: all 0.3s ease;
+}
+
+/* Button Hover */
+
+.subscribe-platform-btn:hover {
+    background: #ff76a8;
+
+    border-color: #ff76a8;
+
+    color: #100d15;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 25px rgba(255, 118, 168, 0.15);
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .subscribe-section {
+        min-height: 450px;
+        padding: 75px 20px;
+    }
+
+    .subscribe-title {
+        font-size: 58px;
+        letter-spacing: -3px;
+    }
+
+    .subscribe-description {
+        font-size: 13px;
+        max-width: 520px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .subscribe-section {
+        min-height: 430px;
+        padding: 65px 18px;
+    }
+
+    .subscribe-label {
+        font-size: 10px;
+        margin-bottom: 17px;
+    }
+
+    .subscribe-title {
+        font-size: 46px;
+        letter-spacing: -2.5px;
+    }
+
+    .subscribe-description {
+        font-size: 12px;
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+
+    .subscribe-platforms {
+        gap: 8px;
+    }
+
+    .subscribe-platform-btn {
+        padding: 11px 13px;
+        font-size: 11px;
+        border-radius: 11px;
+    }
+
+}
+
+/* =====================================
+   WANT TO BE A GUEST SECTION
+===================================== */
+
+.guest-section {
+  width: 100%;
+  padding: 100px 5%;
+  background: #08080c;
+  position: relative;
+  overflow: hidden;
+}
+
+.guest-container {
+  width: 100%;
+  max-width: 1100px;
+  min-height: 200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 45px 30px;
+
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 24px;
+
+  position: relative;
+  z-index: 1;
+
+  transition: border-color 0.3s ease,
+              background 0.3s ease;
+}
+
+.guest-container:hover {
+  border-color: rgba(255, 110, 190, 0.25);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.guest-title {
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 14px;
+  letter-spacing: -1px;
+}
+
+.guest-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 24px;
+  max-width: 650px;
+}
+
+.guest-pitch-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 30px;
+
+  background: #f52b89;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+  border-radius: 13px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  transition: all 0.3s ease;
+}
+
+.guest-pitch-btn:hover {
+  background: #f1338b;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(255, 145, 207, 0.25);
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 768px) {
+
+  .guest-section {
+    padding: 70px 5%;
+  }
+
+  .guest-container {
+    min-height: 180px;
+    padding: 35px 20px;
+    border-radius: 18px;
+  }
+
+  .guest-title {
+    font-size: 27px;
+  }
+
+  .guest-description {
+    font-size: 13px;
+    max-width: 450px;
+  }
+
+  .guest-pitch-btn {
+    padding: 13px 25px;
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .guest-section {
+    padding: 55px 5%;
+  }
+
+  .guest-container {
+    padding: 35px 18px;
+  }
+
+  .guest-title {
+    font-size: 24px;
+  }
+
+  .guest-description {
+    font-size: 12px;
+  }
+
+}

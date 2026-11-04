@@ -1,0 +1,132 @@
+/* Main section */
+.why-codecap {
+width: 100%;
+background: #070f2b;
+color: #ffffff;
+padding: 30px 6.5%;
+box-sizing: border-box;
+}
+
+/* Inner container */
+.why-codecap-container {
+width: 100%;
+max-width: 1400px;
+margin: 0 auto;
+padding-top: 50px;
+}
+
+/* Small heading */
+.why-eyebrow {
+display: block;
+color: #747474;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 2px;
+margin-bottom: 18px;
+}
+
+/* Pink line below eyebrow */
+.why-small-line {
+width: 45px;
+height: 4px;
+background: #ef4687;
+margin-bottom: 25px;
+border-radius: 2px;
+}
+
+/* Main heading */
+.why-heading {
+font-size: clamp(28px, 3.2vw, 46px);
+line-height: 1.2;
+font-weight: 800;
+letter-spacing: -1.2px;
+margin: 0 0 24px;
+}
+
+.why-heading span {
+color: #ef4687;
+}
+
+/* Introduction paragraph */
+.why-intro {
+max-width: 680px;
+color: #747474;
+font-size: 18px;
+line-height: 1.8;
+margin: 0 0 38px;
+font-weight: 400;
+}
+
+/* Two-column layout */
+.why-reasons {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+column-gap: 45px;
+row-gap: 30px;
+}
+
+/* Individual reason */
+.why-reason {
+border-left: 4px solid #ef4687;
+padding: 8px 0 8px 20px;
+min-width: 0;
+}
+
+/* Reason heading */
+.why-reason h3 {
+color: #ffffff;
+font-size: 19px;
+font-weight: 750;
+line-height: 1.5;
+margin: 0 0 12px;
+}
+
+/* Reason description */
+.why-reason p {
+color: #929191;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.8;
+margin: 0;
+}
+
+/* Tablet and mobile responsive layout */
+@media (max-width: 768px) {
+.why-codecap {
+padding: 35px 24px;
+}
+
+.why-heading {
+font-size: 30px;
+letter-spacing: -0.7px;
+}
+
+.why-intro {
+font-size: 14px;
+margin-bottom: 32px;
+}
+
+.why-reasons {
+grid-template-columns: 1fr;
+row-gap: 25px;
+}
+
+.why-reason h3 {
+font-size: 16px;
+}
+
+.why-reason p {
+font-size: 14px;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+.why-codecap {
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.why-reasons {
+column-gap: 28px;
+}
+}

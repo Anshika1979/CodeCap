@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+}
+
+.products-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px 5.2% 70px;
+  background-color: white;
+  color: #000000;
+  margin-top: 0;
+}
+
+/* Header section */
+
+.products-header {
+  padding-bottom: 58px;
+  border-bottom: 1px solid #e8e5e2;
+  margin-left: 50px;
+}
+
+.products-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.2px;
+  color: #7c7a7b;
+}
+
+.products-underline {
+  width: 54px;
+  height: 3px;
+  margin-top: 23px;
+  margin-bottom: 31px;
+  background-color: #f45084;
+  border-radius: 5px;
+}
+
+.products-header h1 {
+  margin: 0;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.2;
+  font-weight: 750;
+  letter-spacing: -1.8px;
+}
+
+.products-header h1 span {
+  color: #ed497d;
+}
+
+.products-intro {
+  margin-top: 29px;
+  margin-bottom: 0;
+  max-width: 760px;
+  color: #858587;
+  font-size: 19px;
+  line-height: 1.9;
+  font-weight: 300;
+}
+
+/* Product row */
+
+.product-item {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 0;
+  padding-top: 35px;
+  margin-left: 50px;
+}
+
+.product-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 12px;
+  background-color: #d8f9d8;
+  color: #2c9b46;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+
+
+.product-sidebar h2 {
+  margin: 19px 0 0;
+  font-size: 28px;
+  font-weight: 750;
+  letter-spacing: -0.7px;
+}
+
+/* Product description */
+
+.product-content {
+  min-width: 0;
+}
+
+.product-content h3 {
+  margin: 2px 0 14px;
+  font-size: 19px;
+  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+.product-description {
+  margin: 0;
+  color: #b2a3a3;
+  font-size: 17px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.universal-description {
+ margin: 0;
+max-width: 1050px;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.9;
+color: #595858;
+}
+
+/* Certification badges */
+
+.certification-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 23px;
+}
+
+.certification-badge {
+  display: inline-block;
+  padding: 9px 14px;
+  background-color: #f3f3f7;
+  color: #62605e;
+  border: 1px solid #eeece9;
+  border-radius: 30px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* Product link */
+
+.product-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  padding: 11px 20px;
+  border: 1px solid #45cadc;
+  border-radius: 30px;
+  color: #20b6dc;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition: background-color 0.25s ease,
+              color 0.25s ease;
+}
+
+.product-link:hover {
+  cursor: pointer;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+  .products-section {
+    padding: 25px 6% 50px;
+  }
+
+  .products-header {
+    padding-bottom: 38px;
+  }
+
+  .products-header h1 {
+    font-size: clamp(32px, 7vw, 44px);
+    letter-spacing: -1.2px;
+  }
+
+  .products-intro {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .product-item {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-top: 35px;
+  }
+
+  .product-sidebar h2 {
+    margin-top: 14px;
+  }
+
+  .product-content h3 {
+    font-size: 18px;
+  }
+
+  .product-description {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .certification-list {
+    gap: 8px;
+  }
+
+  .certification-badge {
+    padding: 8px 11px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 400px) {
+  .products-header h1 {
+    font-size: 31px;
+  }
+
+  .products-eyebrow {
+    font-size: 10px;
+  }
+}
+
+/* Main container */
+.ilcm-container {
+width: 100%;
+min-height: 340px;
+padding: 20px 7%;
+box-sizing: border-box;
+
+display: grid;
+grid-template-columns: 230px minmax(0, 1fr);
+column-gap: 55px;
+align-items: start;
+padding-left: 50px;
+border-bottom: 1px solid #eeeeee;
+}
+
+/* Left column */
+.ilcm-left {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+/* Status badge */
+.ilcm-status {
+display: inline-block;
+padding: 7px 12px;
+border-radius: 30px;
+
+background-color: #fce1e7;
+color: #e83e7c;
+
+font-size: 13px;
+font-weight: 600;
+letter-spacing: 0.5px;
+}
+
+/* ILCM heading */
+.ilcm-title {
+margin: 24px 0 0;
+font-size: 28px;
+line-height: 1.2;
+font-weight: 800;
+letter-spacing: -0.8px;
+color: #111111;
+}
+
+/* Right column */
+.ilcm-right {
+width: 100%;
+max-width: 1000px;
+}
+
+/* Main heading */
+.ilcm-heading {
+margin: 0 0 16px;
+font-size: 19px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: -0.3px;
+color: #171717;
+}
+
+/* Description */
+.ilcm-description {
+margin: 0;
+max-width: 1050px;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.9;
+color: #595858;
+}
+
+/* Feature tags */
+.ilcm-tags {
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+gap: 10px;
+margin-top: 20px;
+}
+
+.ilcm-tag {
+display: inline-flex;
+align-items: center;
+padding: 10px 13px;
+border-radius: 25px;
+border: 1px solid rgb(240, 240, 240);
+
+background-color: #f6f4fe;
+color: #777777;
+
+font-size: 13px;
+line-height: 1.2;
+white-space: nowrap;
+}
+
+/* Early access button */
+.ilcm-button {
+margin-top: 22px;
+padding: 12px 22px;
+
+background-color: transparent;
+border: 1px solid #eeeeee;
+border-radius: 30px;
+
+color: #878686;
+font-size: 15px;
+font-weight: 500;
+
+cursor: pointer;
+
+}
+
+
+
+/* Tablet */
+@media (max-width: 768px) {
+.ilcm-container {
+grid-template-columns: 150px minmax(0, 1fr);
+column-gap: 25px;
+padding: 45px 5%;
+}
+
+.ilcm-heading {
+font-size: 17px;
+}
+
+.ilcm-description {
+font-size: 14px;
+line-height: 1.8;
+}
+
+.ilcm-title {
+font-size: 25px;
+}
+}
+
+/* Mobile */
+@media (max-width: 550px) {
+.ilcm-container {
+grid-template-columns: 1fr;
+row-gap: 25px;
+padding: 35px 6%;
+}
+
+.ilcm-title {
+margin-top: 15px;
+}
+
+.ilcm-heading {
+font-size: 18px;
+}
+
+.ilcm-tags {
+gap: 8px;
+}
+
+.ilcm-tag {
+font-size: 11px;
+padding: 8px 10px;
+}
+
+.ilcm-button {
+margin-top: 20px;
+}
+}
+.solid-line{
+    border: 0;
+    height: 1px;
+    background-color: lightgray;
+    width: 100%;
+    margin: 40px 0;
+}

@@ -1,0 +1,121 @@
+.site-footer {
+  width: 100%;
+  min-height: 118px;
+  background-color: #090a15;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px 5%;
+  gap: 30px;
+}
+
+/* CodeCap logo */
+.footer-logo {
+  flex-shrink: 0;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+.footer-logo span {
+  color: #f05b83;
+}
+
+/* Navigation links */
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: #8e8d8f;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: #f45881;
+}
+
+/* Copyright and contact information */
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 2px;
+  color: #737375;
+  white-space: nowrap;
+}
+
+.footer-info a {
+  color: #88888a;
+  text-decoration: none;
+
+
+}
+
+.footer-info a:hover {
+  color: #f05b83;
+}
+
+.footer-dot {
+  color: #888888;
+  margin: 0 2px;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .site-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 22px;
+    padding: 30px 24px;
+  }
+
+  .footer-nav {
+    gap: 20px;
+  }
+
+  .footer-info {
+    justify-content: center;
+    white-space: normal;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .site-footer {
+    flex-direction: column;
+    gap: 24px;
+    padding: 35px 18px;
+  }
+
+  .footer-logo {
+    font-size: 24px;
+  }
+
+  .footer-nav {
+    gap: 16px 22px;
+  }
+
+  .footer-nav a {
+    font-size: 13px;
+  }
+
+  .footer-info {
+    font-size: 11px;
+    line-height: 1.8;
+  }
+}

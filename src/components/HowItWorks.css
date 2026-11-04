@@ -1,0 +1,124 @@
+/* Main section */
+.how-it-works {
+width: 100%;
+background-color: #fffdfd;
+color: #040404;
+padding: 60px 7%;
+box-sizing: border-box;
+}
+
+/* Content container */
+.how-container {
+width: 100%;
+max-width: 820px;
+margin: 0 auto;
+}
+
+/* Small eyebrow text */
+.how-eyebrow {
+display: block;
+font-size: 12px;
+font-weight: 600;
+letter-spacing: 2px;
+color: #444444;
+margin-bottom: 17px;
+}
+
+/* Pink line */
+.how-accent-line {
+width: 47px;
+height: 3px;
+background-color: #ef3f74;
+margin-bottom: 27px;
+}
+
+/* Main heading */
+.how-heading {
+font-size: 50px;
+font-weight: 750;
+line-height: 1.35;
+letter-spacing: -1.2px;
+margin: 0;
+color: #111111;
+}
+
+.how-heading span {
+color: #ef3f74;
+}
+
+/* Steps wrapper */
+.how-steps {
+margin-top: 45px;
+}
+
+/* Individual step row */
+.how-step {
+display: grid;
+grid-template-columns: 70px minmax(0, 1fr);
+column-gap: 28px;
+padding: 27px 8px;
+border-bottom: 1px solid #e9e7e7;
+align-items: start;
+}
+
+/* Step number */
+.how-number {
+color: #ef3f74;
+font-size: 21px;
+font-weight: 900;
+letter-spacing: 0.5px;
+padding-top: 3px;
+text-align: center;
+}
+
+/* Step content */
+.how-step-content h3 {
+color: #171717;
+font-size: 18px;
+font-weight: 700;
+line-height: 1.5;
+margin: 0 0 10px;
+}
+
+.how-step-content p {
+color: #757575;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.9;
+margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+.how-it-works {
+padding: 45px 22px;
+}
+
+.how-heading {
+font-size: 30px;
+letter-spacing: -0.7px;
+}
+
+.how-steps {
+margin-top: 30px;
+}
+
+.how-step {
+grid-template-columns: 42px minmax(0, 1fr);
+column-gap: 14px;
+padding: 23px 0;
+}
+
+.how-number {
+font-size: 17px;
+}
+
+.how-step-content h3 {
+font-size: 16px;
+}
+
+.how-step-content p {
+font-size: 13px;
+line-height: 1.8;
+}
+}

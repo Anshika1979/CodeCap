@@ -1,0 +1,1059 @@
+/* ========================================
+   GLOBAL RESET
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.services-hero,
+.capabilities-section {
+  width: 100%;
+  color: #f7f7fa;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* ========================================
+   1. SERVICES HERO SECTION
+======================================== */
+
+.services-hero {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: white;
+  overflow: hidden;
+  padding-top: 25px;
+}
+
+.services-content {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.services-label {
+  display: inline-block;
+padding: 12px 22px;
+border: 2px solid rgb(246, 125, 165);
+border-radius: 30px;
+background-color: rgb(247, 204, 218);
+color: rgb(244, 10, 119);
+font-size: 12px;
+font-weight: 750;
+letter-spacing: 2px;
+
+margin-bottom: 42px;
+}
+
+.services-heading {
+  color: white;
+  font-size: 75px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+.heading-white {
+  color: black;
+}
+
+.services-description {
+  max-width: 600px;
+  margin-top: 30px;
+  color: black;
+  font-size: 20px;
+  line-height: 2.05;
+  font-weight: 300;
+}
+
+/* ========================================
+   2. SIX CAPABILITIES SECTION
+======================================== */
+
+.capabilities-section {
+  width: 100%;
+  padding: 80px 6% 110px;
+  background:
+    radial-gradient(
+      ellipse at 85% 35%,
+      rgba(36, 67, 111, 0.18),
+      transparent 50%
+    ),
+    #101121;
+  overflow: hidden;
+}
+
+.capabilities-container {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+/* Section heading */
+
+.capabilities-heading {
+  margin-bottom: 65px;
+}
+
+.capabilities-label {
+  color: #ff788f;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+.capabilities-heading h2 {
+  color: #ffffff;
+  font-size: clamp(40px, 5.5vw, 76px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -2.5px;
+}
+
+
+
+/* ========================================
+   3. TWO-COLUMN LAYOUT
+======================================== */
+
+.capabilities-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.35fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* ========================================
+   4. LEFT SERVICE OPTIONS
+======================================== */
+
+.capabilities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.capability-option {
+  width: 100%;
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+
+  text-align: left;
+  color: #f3f3f8;
+  background: rgba(23, 25, 39, 0.9);
+
+  border: 1px solid #2b2d3c;
+  border-radius: 18px;
+
+  cursor: pointer;
+  outline: none;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* Hover effect */
+
+.capability-option:hover {
+  background: #202438;
+  border-color: #555570;
+  transform: translateX(3px);
+}
+
+/* Active option */
+
+.capability-option.selected {
+  background: linear-gradient(
+    110deg,
+    rgba(112, 35, 56, 0.45),
+    rgba(36, 43, 75, 0.9)
+  );
+
+  border-color: #a65b80;
+
+  box-shadow:
+    inset 0 0 0 1px rgba(185, 105, 150, 0.12);
+}
+
+/* Keyboard accessibility */
+
+.capability-option:focus-visible {
+  outline: 2px solid #7ce9f4;
+  outline-offset: 3px;
+}
+
+/* Service number */
+
+.capability-number {
+  flex-shrink: 0;
+  color: #f9528f;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* Service title */
+
+.capability-title {
+  color: #f3f3f8;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* ========================================
+   5. RIGHT DESCRIPTION PANEL
+======================================== */
+
+.capability-detail {
+  width: 100%;
+  min-width: 0;
+  padding: 45px 42px;
+
+  border: 1px solid rgba(130, 151, 192, 0.35);
+  border-radius: 28px;
+
+  background:
+    radial-gradient(
+      ellipse at 10% 0%,
+      rgba(66, 104, 158, 0.28),
+      transparent 60%
+    ),
+    linear-gradient(
+      145deg,
+      #1b263a,
+      #10121e 78%
+    );
+
+  animation: detailAppear 0.3s ease;
+}
+
+/* Panel transition */
+
+@keyframes detailAppear {
+  from {
+    opacity: 0.5;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Service label */
+
+.detail-label {
+  color: #7ce9f4;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 28px;
+}
+
+/* Service heading */
+
+.capability-detail h3 {
+  color: #ffffff;
+  font-size: clamp(30px, 3.7vw, 52px);
+  font-weight: 800;
+  line-height: 1.13;
+  letter-spacing: -1.5px;
+  margin-bottom: 20px;
+  overflow-wrap: anywhere;
+}
+
+/* Service subtitle */
+
+.capability-detail h4 {
+  color: #f9528f;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+/* Description */
+
+.detail-description {
+  color: #c0c2ce;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+/* ========================================
+   6. SERVICE BULLET POINTS
+======================================== */
+
+.detail-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.detail-points li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 15px;
+
+  color: #e1e2eb;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Rounded pink bullets */
+
+.detail-points li::before {
+  content: "";
+  position: absolute;
+
+  top: 9px;
+  left: 2px;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  background: #ff8299;
+}
+
+/* ========================================
+   7. CALL-TO-ACTION BUTTON
+======================================== */
+
+.service-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  padding: 14px 20px;
+
+  color: #10111a;
+  background: #f5f4f8;
+
+  border: 1px solid #484c60;
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.service-cta:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+}
+
+.service-cta span {
+  font-size: 18px;
+}
+
+/* ========================================
+   8. TABLET RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 900px) {
+  .services-hero {
+    min-height: auto;
+    padding: 90px 5%;
+  }
+
+  .services-heading {
+    font-size: clamp(48px, 8vw, 70px);
+  }
+
+  .capabilities-section {
+    padding: 65px 5% 85px;
+  }
+
+  .capabilities-heading {
+    margin-bottom: 40px;
+  }
+
+  .capabilities-layout {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .capabilities-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .capability-option {
+    min-height: 80px;
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .capability-detail {
+    padding: 35px 30px;
+  }
+
+  .capability-detail h3 {
+    font-size: 40px;
+  }
+}
+
+/* ========================================
+   9. MOBILE RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 520px) {
+  .services-hero {
+    min-height: auto;
+    padding: 75px 22px;
+  }
+
+  .services-label {
+    font-size: 12px;
+    margin-bottom: 22px;
+  }
+
+  .services-heading {
+    font-size: clamp(38px, 10vw, 48px);
+    line-height: 1.08;
+    letter-spacing: -1.8px;
+  }
+
+  .services-description {
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .capabilities-section {
+    padding: 50px 18px 70px;
+  }
+
+  .capabilities-heading {
+    margin-bottom: 35px;
+  }
+
+  .capabilities-label {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+
+  .capabilities-heading h2 {
+    font-size: clamp(34px, 9vw, 42px);
+    letter-spacing: -1.5px;
+    line-height: 1.08;
+  }
+
+  .capabilities-layout {
+    gap: 18px;
+  }
+
+  .capabilities-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .capability-option {
+    min-height: 65px;
+    padding: 15px 17px;
+    border-radius: 14px;
+  }
+
+  .capability-title {
+    font-size: 14px;
+  }
+
+  .capability-detail {
+    padding: 28px 21px;
+    border-radius: 22px;
+  }
+
+  .detail-label {
+    margin-bottom: 22px;
+    font-size: 12px;
+  }
+
+  .capability-detail h3 {
+    font-size: 33px;
+    letter-spacing: -1px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+
+  .capability-detail h4 {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  .detail-description {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+  }
+
+  .detail-points li {
+    font-size: 14px;
+    margin-bottom: 13px;
+  }
+
+  .service-cta {
+    padding: 13px 16px;
+    font-size: 13px;
+  }
+}
+
+/* ========================================
+   10. REDUCED MOTION ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .capability-detail {
+    animation: none;
+  }
+
+  .capability-option,
+  .service-cta {
+    transition: none;
+  }
+}
+/* ENGAGEMENT MODELS */
+
+.engagement-section {
+  width: 100%;
+  max-width: 100%;
+  padding: 75px 0 100px;
+  background: #f6f5f5;
+  color: #111;
+  overflow: hidden;
+}
+
+.engagement-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 5.5%;
+}
+
+.engagement-label {
+  margin: 0 0 24px;
+  color: #ee2c73;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+
+.engagement-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0 58px;
+  font-size: clamp(38px, 5.2vw, 76px);
+  line-height: 1.03;
+  letter-spacing: -3px;
+  font-weight: 800;
+  margin-left: 20px;
+}
+
+.heading-dark {
+  color: black;
+}
+
+.heading-gray {
+  color: black;
+  margin-top: 4px;
+}
+
+.engagement-grid {
+  display: grid;
+  align-items: left;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 1700px;
+}
+
+.engagement-card {
+    min-height: 285px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid lightgray;
+  border-radius: 27px;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.engagement-card:hover {
+  transform: translateY(-5px);
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.engagement-number {
+  margin-bottom: 72px;
+  color: #f12b74;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.engagement-card-content h3 {
+  margin: 0 0 17px;
+  color: #171717;
+  font-size: clamp(18px, 1.55vw, 25px);
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.engagement-card-content p {
+  margin: 0;
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  .engagement-container {
+    padding: 0 4%;
+  }
+
+  .engagement-heading {
+    font-size: clamp(42px, 6vw, 62px);
+    letter-spacing: -2px;
+    margin-bottom: 42px;
+  }
+
+  .engagement-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .engagement-card {
+    min-height: 260px;
+    padding: 28px;
+  }
+
+  .engagement-number {
+    margin-bottom: 50px;
+  }
+
+  .engagement-card-content h3 {
+    font-size: 22px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .engagement-section {
+    padding: 55px 0 65px;
+  }
+
+  .engagement-container {
+    padding: 0 20px;
+  }
+
+  .engagement-heading {
+    font-size: clamp(34px, 9vw, 48px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+    margin-bottom: 32px;
+  }
+
+  .engagement-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .engagement-card {
+    min-height: auto;
+    padding: 26px 24px 30px;
+    border-radius: 22px;
+  }
+
+  .engagement-number {
+    margin-bottom: 38px;
+  }
+
+  .engagement-card-content h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+  }
+
+  .engagement-card-content p {
+    font-size: 14px;
+  }
+}
+/* =====================================
+   MILESTONE VESTING SECTION
+===================================== */
+
+.milestone-section {
+  width: 100%;
+  min-height: 500px;
+  padding: 90px 5.5%;
+  background: radial-gradient(
+      ellipse at 85% 35%,
+      rgba(30, 20, 62, 0.966),
+      transparent 50%
+    ),
+    #11152e;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.milestone-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 44% 56%;
+  gap: 30px;
+  align-items: start;
+}
+
+/* LEFT CONTENT */
+
+.milestone-content {
+  min-width: 0;
+  padding-right: 10px;
+}
+
+.milestone-label {
+  margin: 0 0 24px;
+  color: #fe3172;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.milestone-heading {
+  margin: 0 0 24px;
+  color: white;
+  font-size: clamp(44px, 5vw, 76px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -2.5px;
+}
+
+.milestone-heading span {
+  color: white;
+}
+
+.milestone-description {
+  max-width: 550px;
+  margin: 0 0 25px;
+  color: #d3d1d1;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.milestone-note {
+  max-width: 570px;
+  margin: 22px 0 0;
+  color: #a3a3a3;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* RIGHT PROGRESS BARS */
+
+.milestone-progress {
+  width: 100%;
+  min-width: 0;
+  padding-top: 65px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.milestone-row {
+  width: 100%;
+  min-height: 62px;
+  padding: 14px 18px;
+
+  display: grid;
+  grid-template-columns: 95px minmax(0, 1fr) 42px;
+  align-items: center;
+  gap: 18px;
+
+  background: rgb(245, 244, 244);
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  border-radius: 17px;
+
+  transition: background 0.3s ease;
+}
+
+.milestone-row:hover {
+  background: #fff;
+}
+
+.milestone-name {
+  color: #171717;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.milestone-track {
+  width: 100%;
+  height: 9px;
+  overflow: hidden;
+  border-radius: 50px;
+
+  background: linear-gradient(
+    180deg,
+    #d0cecb,
+    #e1dfdc
+  );
+}
+
+.milestone-fill {
+  height: 100%;
+  border-radius: 50px;
+
+  background: linear-gradient(
+    90deg,
+    #a52f51 0%,
+    #754b8b 48%,
+    #24a4c9 100%
+  );
+
+  transition: width 0.8s ease;
+}
+
+.milestone-percentage {
+  color: #151515;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: right;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .milestone-section {
+    padding: 70px 5%;
+  }
+
+  .milestone-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .milestone-heading {
+    font-size: clamp(44px, 7vw, 65px);
+  }
+
+  .milestone-description {
+    max-width: 650px;
+  }
+
+  .milestone-progress {
+    padding-top: 5px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .milestone-section {
+    min-height: auto;
+    padding: 55px 20px;
+  }
+
+  .milestone-label {
+    margin-bottom: 20px;
+    font-size: 11px;
+  }
+
+  .milestone-heading {
+    font-size: clamp(40px, 10vw, 54px);
+    line-height: 1.08;
+    letter-spacing: -1.8px;
+  }
+
+  .milestone-description {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .milestone-note {
+    font-size: 11px;
+  }
+
+  .milestone-progress {
+    gap: 12px;
+  }
+
+  .milestone-row {
+    grid-template-columns: 65px minmax(0, 1fr) 36px;
+    gap: 10px;
+    min-height: 58px;
+    padding: 12px;
+    border-radius: 13px;
+  }
+
+  .milestone-name {
+    font-size: 12px;
+  }
+
+  .milestone-track {
+    height: 7px;
+  }
+
+  .milestone-percentage {
+    font-size: 12px;
+  }
+}
+.start-something {
+  width: 100%;
+  min-height: 560px;
+  padding: 100px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  background:rgb(244, 243, 248);
+}
+
+.start-something-content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.start-something-eyebrow {
+  color: #f11b6a;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 28px;
+}
+
+.start-something-heading {
+  color: black;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -4px;
+  margin-bottom: 32px;
+}
+
+.start-something-description {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  color: #4e4d4e;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.start-something-button {
+  min-height: 65px;
+  padding: 20px 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  border: 1px solid #a09f9f;
+  border-radius: 14px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.start-something-button span {
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.start-something-button:hover {
+  color: #ffffff;
+  background: #d6537c;
+  border-color: #a64c68;
+  transform: translateY(-3px);
+}
+
+.start-something-button:hover span {
+  transform: translateX(5px);
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 768px) {
+  .start-something {
+    min-height: 460px;
+    padding: 80px 24px;
+  }
+
+  .start-something-heading {
+    font-size: clamp(46px, 10vw, 72px);
+    letter-spacing: -2px;
+  }
+
+  .start-something-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .start-something {
+    min-height: auto;
+    padding: 75px 22px;
+  }
+
+  .start-something-eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .start-something-heading {
+    font-size: 45px;
+    line-height: 1.08;
+    letter-spacing: -2px;
+  }
+
+  .start-something-description {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .start-something-button {
+    width: 100%;
+    padding: 18px 22px;
+  }
+}
