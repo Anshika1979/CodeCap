@@ -196,9 +196,10 @@ body {
 }
 
 .portfolio-container {
+  width: 100%;
   max-width: 1250px;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding: 70px 60px 50px ;
   margin-bottom: 50px;
 }
 
