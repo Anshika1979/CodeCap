@@ -22,6 +22,8 @@ button {
    1. SERVICES HERO SECTION
 ======================================== */
 
+
+
 .services-hero {
   width: 100%;
   min-height: 90vh;
@@ -36,27 +38,28 @@ button {
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
+  padding: 0 48px;          /* NEW: left/right space */
+  box-sizing: border-box;   /* NEW: padding width se bahar na jaye */
 }
 
 .services-label {
   display: inline-block;
-padding: 12px 22px;
-border: 2px solid rgb(246, 125, 165);
-border-radius: 30px;
-background-color: rgb(247, 204, 218);
-color: rgb(244, 10, 119);
-font-size: 12px;
-font-weight: 750;
-letter-spacing: 2px;
-
-margin-bottom: 42px;
+  padding: 12px 22px;
+  border: 2px solid rgb(246, 125, 165);
+  border-radius: 30px;
+  background-color: rgb(247, 204, 218);
+  color: rgb(244, 10, 119);
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 2px;
+  margin-bottom: 32px;      /* 42px se kam kiya */
 }
 
 .services-heading {
   color: white;
   font-size: 75px;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.15;        /* thoda tight */
   letter-spacing: -2px;
   margin: 0;
 }
@@ -67,12 +70,13 @@ margin-bottom: 42px;
 
 .services-description {
   max-width: 600px;
-  margin-top: 30px;
+  margin-top: 24px;         /* 30px se kam kiya */
   color: black;
   font-size: 20px;
-  line-height: 2.05;
+  line-height: 1.7;         /* 2.05 bahut loose tha */
   font-weight: 300;
 }
+ 
 
 /* ========================================
    2. SIX CAPABILITIES SECTION
