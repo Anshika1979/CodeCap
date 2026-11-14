@@ -440,7 +440,7 @@ export default function Podcast() {
             </a>
 
             <a
-              href="#"
+              href="https://www.youtube.com/"
               className="subscribe-platform-btn"
             >
               RSS Feed
