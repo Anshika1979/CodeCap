@@ -130,18 +130,18 @@ export default function Product() {
   const selectedProduct = products[selectedIndex];
 
   // AudSpect overview features
-  const audspectFeatures = [
-    "Dynamic threat intelligence and zero-day emulation",
-    "Playbook-driven simulations mapped to MITRE ATT&CK",
-    "Unified posture score and executive-ready reporting",
-  ];
+  // const audspectFeatures = [
+  //   "Dynamic threat intelligence and zero-day emulation",
+  //   "Playbook-driven simulations mapped to MITRE ATT&CK",
+  //   "Unified posture score and executive-ready reporting",
+  // ];
 
   // AudSpect validation information
-  const validationItems = [
-    { name: "Endpoints", status: "Validated" },
-    { name: "Network", status: "Paths mapped" },
-    { name: "Cloud", status: "Simulated" },
-  ];
+  // const validationItems = [
+  //   { name: "Endpoints", status: "Validated" },
+  //   { name: "Network", status: "Paths mapped" },
+  //   { name: "Cloud", status: "Simulated" },
+  // ];
 
   return (
     <main className="product-page">
