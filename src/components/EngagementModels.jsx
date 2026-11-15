@@ -34,24 +34,24 @@ export default function EngagementModels() {
   ];
 
   return (
-    <section className="engagement-section">
+    <section className="home-engagement-section">
 
-      <div className="engagement-eyebrow">
+      <div className="home-engagement-eyebrow">
         <span>ENGAGEMENT MODELS</span>
         <div className="engagement-line"></div>
       </div>
 
-      <h1 className="engagement-title">
+      <h1 className="home-engagement-title">
         Four models.
         <br />
         Pick the one that matches your{' '}
         <span>stage.</span>
       </h1>
 
-      <div className="engagement-grid">
+      <div className="home-engagement-grid">
         {models.map((model, index) => (
           <div
-            className={`engagement-card ${
+            className={`home-engagement-card ${
               model.featured ? 'featured-card' : ''
             }`}
             key={index}

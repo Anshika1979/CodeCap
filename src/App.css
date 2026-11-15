@@ -1,38 +1,18 @@
-.App {
-  text-align: center;
+/* Shared responsive foundations. Component styles retain their visual design. */
+:root {
+  --page-gutter: clamp(16px, 5vw, 80px);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+*, *::before, *::after { box-sizing: border-box; }
+body { overflow-x: visible; }
+main, section, article, nav, form { min-width: 0; }
+h1, h2, h3, h4, p, a, button, label, span { overflow-wrap: anywhere; }
+img, video, canvas { max-width: 100%; }
+video { height: auto; }
+input, select, textarea { max-width: 100%; min-width: 0; font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button, [role="button"] { touch-action: manipulation; }
+a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
+  outline: 2px solid #d93856;
+  outline-offset: 4px;
 }

@@ -1072,3 +1072,22 @@
   }
 
 }
+.portfolio-startups-heading { font-size: clamp(34px, 6vw, 75px); }
+.portfolio-focus-heading h2 { font-size: clamp(34px, 6vw, 75px); }
+.active-project-layout { grid-template-columns: minmax(0, 280px) minmax(0, 1fr); }
+.active-project-top { flex-wrap: wrap; gap: 16px; }
+.active-project-details, .active-project-list { min-width: 0; }
+.portfolio-cta-button { max-width: 100%; min-width: 0; }
+@media (max-width: 1024px) {
+  .active-project-layout { grid-template-columns: minmax(0, 1fr); }
+  .active-project-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  .portfolio-page { min-height: auto; padding: 48px var(--page-gutter); }
+  .portfolio-startups-heading { letter-spacing: -1px; }
+  .project-stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-information-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 480px) {
+  .active-project-list { grid-template-columns: minmax(0, 1fr); }
+}

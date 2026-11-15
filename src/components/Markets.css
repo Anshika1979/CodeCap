@@ -55,15 +55,6 @@
 }
 
 /* Three market models */
-.engagement-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  align-items: stretch;
-  gap: 30px;
-  padding-left: 90px;
-  
-
-}
 
 /* Individual card */
 
@@ -176,4 +167,12 @@
   .model-code {
     margin-bottom: 24px;
   }
+}
+.markets-header, .models-grid { margin-left: 0; margin-right: 0; }
+.models-grid { max-width: none; }
+@media (min-width: 651px) and (max-width: 1024px) {
+  .models-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  .markets-section { padding: 48px var(--page-gutter); min-height: auto; }
 }

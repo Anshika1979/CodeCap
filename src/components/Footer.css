@@ -119,3 +119,9 @@
     line-height: 1.8;
   }
 }
+.footer-info { min-width: 0; white-space: normal; }
+.footer-nav a { display: inline-flex; align-items: center; min-height: 44px; }
+@media (max-width: 767px) {
+  .footer-nav { gap: 4px 20px; }
+  .footer-info { gap: 4px; font-size: 13px; }
+}

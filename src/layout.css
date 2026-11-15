@@ -1,0 +1,64 @@
+/* One content frame for every page. Only outer sections own page gutters;
+   nested containers keep their vertical spacing and card padding. */
+:root {
+  --content-width: 1280px;
+  --page-gutter: clamp(16px, 4vw, 64px);
+  --content-inset: max(var(--page-gutter), calc((100% - var(--content-width)) / 2));
+}
+
+/* Root scoping keeps this layout contract stronger than page-specific rules,
+   including their media queries, without using !important. */
+#root :is(
+  .navbar-container, .site-footer,
+  .hero-container, .text-container, .what-we-do, .testimonial-section,
+  .service-section, .home-engagement-section, .markets-section,
+  .products-section, .team-section, .why-codecap, .how-it-works,
+  .compliance-section, .contact-cta,
+  .studio-section, .founder-offers, .engagement-models-section,
+  .venture-markets-section, .start-something,
+  .services-hero, .capabilities-section, .engagement-section, .milestone-section,
+  .hero, .product-portfolio, .abhra-section, .abhra-capabilities,
+  .audspec-section, .partners-section, .get-started-section,
+  .portfolio-page, .active-portfolio, .portfolio-focus, .portfolio-cta,
+  .team-hero-section, .team-members-section, .operating-principles-section,
+  .founder-statement-section, .work-with-us-section,
+  .insights-hero, .featured-insights, .insights-section, .insights-subscribe,
+  .podcast-hero, .podcast-access-section, .recent-episodes,
+  .ecosystem-section, .subscribe-section, .guest-section
+) {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  padding-inline: var(--content-inset);
+}
+
+/* These wrappers already sit inside the shared content frame. Removing their
+   extra horizontal inset prevents double padding and drifting section edges. */
+#root :is(
+  .navbar, .hero-content, .card-grid, .what-we-do-inner,
+  .service-container, .team-container, .why-codecap-container, .how-container,
+  .studio-content, .founder-offers-inner, .engagement-models-container,
+  .venture-markets-container, .services-content, .capabilities-container,
+  .engagement-container, .milestone-container, .portfolio-container,
+  .abhra-capabilities-container, .audspec-container, .partners-container,
+  .portfolio-content, .active-portfolio-container, .portfolio-focus-container,
+  .team-hero-container, .insights-container, .featured-container,
+  .podcast-container, .podcast-access-container, .episodes-container,
+  .ecosystem-container
+) {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+
+/* Keep headings and full-width grids anchored to the same section edge. */
+#root :is(
+  .home-engagement-eyebrow, .home-engagement-title, .home-engagement-grid,
+  .markets-header, .models-grid, .products-header, .product-item,
+  .engagement-label, .engagement-heading, .engagement-grid, .ilcm-container,
+  .compliance-row
+) {
+  margin-inline: 0;
+  padding-inline: 0;
+}

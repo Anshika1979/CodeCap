@@ -1425,3 +1425,19 @@
   }
 
 }
+.insights-heading { font-size: clamp(34px, 6vw, 75px); line-height: 1.15; letter-spacing: -1.5px; }
+.subscribe-heading { font-size: clamp(34px, 6vw, 75px); }
+.featured-category { padding-right: 48px; }
+.insights-filter, .insight-back, .featured-button, .insight-arrow { min-height: 44px; }
+.insight-arrow { min-width: 44px; }
+@media (max-width: 767px) {
+  .insights-hero { min-height: auto; padding: 55px var(--page-gutter); }
+  .insights-grid { grid-template-columns: minmax(0, 1fr); }
+  .subscribe-form input { font-size: 16px; }
+  .featured-description { font-size: 14px; }
+}
+@media (max-width: 480px) {
+  .subscribe-form { flex-direction: column; gap: 8px; padding: 10px; }
+  .subscribe-form input, .subscribe-form button { flex: auto; width: 100%; min-height: 48px; }
+  .subscribe-form button { font-size: 14px; }
+}

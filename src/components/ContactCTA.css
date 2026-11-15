@@ -118,3 +118,8 @@
     display: none;
   }
 }
+@media (max-width: 767px) {
+  .contact-cta { min-height: auto; padding: 55px var(--page-gutter); }
+  .contact-cta h1 { font-size: clamp(28px, 6vw, 44px); padding-top: 0; }
+  .contact-cta h1 br { display: none; }
+}

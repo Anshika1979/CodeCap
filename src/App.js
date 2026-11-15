@@ -13,6 +13,7 @@ import ContactCTA from "./components/ContactCTA";
 import Footer from "./components/Footer";
 
 import "./App.css";
+import "./layout.css";
 
 function App() {
   const [page, setPage] = useState("home");

@@ -406,3 +406,11 @@ margin-top: 20px;
     width: 100%;
     margin: 40px 0;
 }
+.products-header, .product-item { margin-left: 0; }
+.product-item { grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); gap: 24px; }
+.ilcm-container { padding-inline: 0; gap: 28px; }
+.certification-badge, .ilcm-tag { max-width: 100%; white-space: normal; }
+@media (max-width: 767px) {
+  .products-section { padding-inline: var(--page-gutter); min-height: auto; }
+  .product-item, .ilcm-container { grid-template-columns: minmax(0, 1fr); }
+}

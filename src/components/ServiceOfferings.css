@@ -215,3 +215,11 @@ margin-bottom: 45px;
     font-weight: 300;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
+.studio-services h1 { font-size: clamp(30px, 5vw, 46px); }
+@media (max-width: 767px) {
+  .service-section { min-height: auto; padding: 48px var(--page-gutter); }
+  .introduction { font-size: 16px; }
+  .service-description { padding-left: 0; padding-right: 0; }
+  .service-points { padding-left: 20px; }
+  .service-subtitle, .service-description p, .service-points li { font-size: 14px; }
+}

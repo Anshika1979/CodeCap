@@ -794,3 +794,14 @@ line-height: 1.85;
     padding: 18px 22px;
   }
 }
+.studio-content { margin-inline: auto; }
+.studio-heading { font-size: clamp(34px, 6vw, 80px); line-height: 1.12; }
+.founder-main-heading { font-size: clamp(34px, 6vw, 80px); }
+@media (max-width: 767px) {
+  .studio-section { min-height: auto; padding: 48px var(--page-gutter); }
+  .studio-content { padding-top: 0; }
+  .studio-heading { letter-spacing: -1px; }
+  .founder-offers-list { grid-template-columns: minmax(0, 1fr); }
+  .engagement-models-section, .venture-markets-section { min-height: auto; }
+  .start-something-heading { font-size: clamp(34px, 7vw, 54px); }
+}

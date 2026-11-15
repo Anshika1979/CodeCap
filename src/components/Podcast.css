@@ -1539,3 +1539,18 @@ padding-bottom: 40px;
   }
 
 }
+.podcast-title { font-size: clamp(40px, 6vw, 75px); }
+.podcast-access-grid > *, .ecosystem-grid > * { min-width: 0; }
+.podcast-platform-btn, .subscribe-platform-btn { min-height: 44px; }
+@media (max-width: 767px) {
+  .podcast-hero { min-height: auto; padding: 55px var(--page-gutter); }
+  .podcast-access-header h2, .episodes-heading h2, .ecosystem-heading {
+    font-size: clamp(32px, 6vw, 44px);
+  }
+  .episode-card { display: flex; flex-direction: column; align-items: stretch; gap: 16px; }
+  .episode-number, .episode-details { flex-direction: row; justify-content: flex-start; gap: 12px; }
+  .episode-content p { font-size: 14px; }
+}
+@media (max-width: 480px) {
+  .podcast-platforms, .subscribe-platforms { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

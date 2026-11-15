@@ -1,4 +1,4 @@
-.engagement-section {
+.home-engagement-section {
   width: 100%;
   padding: 65px 50px 80px;
   background-color: #ffffff;
@@ -9,13 +9,13 @@
 
 /* Small heading */
 
-.engagement-eyebrow {
+.home-engagement-eyebrow {
   margin-bottom: 25px;
       padding-left: 90px;
 
 }
 
-.engagement-eyebrow span {
+.home-engagement-eyebrow span {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -32,7 +32,7 @@
 
 /* Main heading */
 
-.engagement-title {
+.home-engagement-title {
   font-size: clamp(30px, 3.2vw, 44px);
   line-height: 1.25;
   font-weight: 750;
@@ -43,13 +43,13 @@
 
 }
 
-.engagement-title span {
+.home-engagement-title span {
   color: #e83766;
 }
 
 /* Four cards */
 
-.engagement-grid {
+.home-engagement-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: stretch;
@@ -61,7 +61,7 @@
 
 /* Individual card */
 
-.engagement-card {
+.home-engagement-card {
   position: relative;
   padding: 32px 25px;
   min-height: 200px;
@@ -70,13 +70,13 @@
   gap: 20;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.engagement-card:hover{
+.home-engagement-card:hover{
 transform: translateY(-4px);
 box-shadow: 0px 10px 30px rgb(181, 180, 180);
 }
 /* Highlighted second card */
 
-.engagement-card.featured-card {
+.home-engagement-card.featured-card {
   border-color: #c9c2c5;
   border: 1px solid rgb(229, 65, 120);
 }
@@ -110,7 +110,7 @@ box-shadow: 0px 10px 30px rgb(181, 180, 180);
 
 /* Card title */
 
-.engagement-card h2 {
+.home-engagement-card h2 {
   margin: 0 0 15px;
   font-size: 17px;
   line-height: 1.4;
@@ -131,20 +131,20 @@ box-shadow: 0px 10px 30px rgb(181, 180, 180);
 /* Responsive tablet layout */
 
 @media (max-width: 1000px) {
-  .engagement-section {
+  .home-engagement-section {
     padding: 55px 50px;
   }
 
-  .engagement-grid {
+  .home-engagement-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 25px;
   }
 
-  .engagement-card {
+  .home-engagement-card {
     padding: 28px 20px;
   }
 
-  .engagement-title {
+  .home-engagement-title {
     font-size: 36px;
   }
 }
@@ -152,26 +152,36 @@ box-shadow: 0px 10px 30px rgb(181, 180, 180);
 /* Responsive mobile layout */
 
 @media (max-width: 600px) {
-  .engagement-section {
+  .home-engagement-section {
     padding: 40px 20px;
   }
 
-  .engagement-title {
+  .home-engagement-title {
     font-size: 30px;
     letter-spacing: -0.5px;
   }
 
-  .engagement-grid {
+  .home-engagement-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .engagement-card {
+  .home-engagement-card {
     min-height: auto;
     padding: 25px 20px;
   }
 
-  .engagement-card.featured-card {
+  .home-engagement-card.featured-card {
     margin-top: 10px;
   }
+}
+/* Keep the home models aligned with the surrounding content. */
+.home-engagement-section { margin-inline: auto; padding-inline: var(--page-gutter); }
+.home-engagement-eyebrow, .home-engagement-title, .home-engagement-grid { padding-left: 0; }
+.home-engagement-grid { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 601px) {
+  .home-engagement-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1200px) {
+  .home-engagement-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
